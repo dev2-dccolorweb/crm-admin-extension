@@ -1,0 +1,28 @@
+{
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "tr-logo-48.png",
+        "default_title": "Cryptobase"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "icons": {
+        "48": "tr-logo-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "run_at": "document_idle",
+            "js": ["popup.js"]
+        }
+    ],
+    "manifest_version": 3,
+    "description": "CRM Admin Accounts Search",
+    "name": "CRM Admin",
+    "version": "1.1"
+}

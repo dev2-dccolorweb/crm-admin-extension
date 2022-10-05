@@ -1,0 +1,22 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #161616;
+    width: 400px;
+    height: 300px;
+    color:  #454545;
+}
+
+.heading img {
+    width: 100px;
+}
+
+.account-item {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.account-item:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
